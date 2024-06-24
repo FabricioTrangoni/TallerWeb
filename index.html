@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="show_data.html">
+        <fieldset>
+            <legend> Datos personales </legend>
+        <label for="fname">Nombre:</label>
+        <input type="text" id="fname" Nombre="fname" placeholder="ingrese su Nombre aqui" placeholder="Nombre">
+        <label for="lname">Apellido:</label>
+        <input type="text" id="lname" Apellido="lname" placeholder="ingrese su Apellido aqui"><br>
+
+        <label for="Dirr"> Dirección:</label>
+        <input type="text" id="Dirr" name="Dirección" placeholder="Ingrese su Dirección aqui">
+        <label for="Ciu">Ciudad:</label>
+        <input type="text" id= "Ciu" name="Ciudad" placeholder="C.A.B.A"><br>
+
+        <label for="CP">Código Postal:</label>
+        <input type="tel" id="CP" name="CP" pattern="[0-9]{3}-[0-9]{2}-[9-0]{3}" placeholder="ingrese su Código Postal aqui">
+        <label  for="Tel">Telefono</label>
+        <input type="tel" id="Tel" name="Tel" pattern="[0-9]{3}-[0-9]{2}-[9-0]{3}" placeholder="ingrese su Telefono aqui">
+
+        <p> Fecha de Nacimiento(mm/dd/yyyy) </p>
+        <input type="date">
+
+        <p>Género (radio) </p>
+        <input type="radio" id="h" name="Género" value="Hombre">
+        <label for="h">Hombre</label>
+        <input type="radio" id="f" name="Género" value="Femenino">
+        <label for="f">Femenino</label>
+        <input type="radio" id="o" name="Género" value="otro">
+        <label for="o">Otro</label><br>
+        </fieldset>
+
+
+        <p>Conocimientos previos (checkbox) </p>
+        <input type="checkbox" id="con1" name="ht" value="HTML">
+        <label for="con1">HTML</label>
+        <input type="checkbox" id="con2" name="cs" value="CSS">
+        <label for="con2">CSS</label>
+        <input type="checkbox" id="con3" name="bs" value="BOOTS">
+        <label for="con3">Bootstrap</label>
+        <input type="checkbox" id="con4" name="Js" value="JavaS">
+        <label for="con4">JavaScrip</label>
+        <input type="checkbox" id="con5" name="BS" value="DataB">
+        <label for="con5">Base de Datos</label>
+        <input type="checkbox" id="con6" name="Py" value="Python">
+        <label for="con6">Python</label>
+        <input type="checkbox" id="con7" name="Dj" value="DJango">
+        <label for="con7">DJango</label><br>
+
+        <label for="estudios"> estudios</label>
+        <select id="estudios" name="estudios">
+            <option value="estudios1">Primario</option>
+            <option value="estudios2">Secundario</option>
+            <option value="estudios3">Terciario</option>
+        </select><br><br>
+
+<p> Comentario: 
+        <textarea name="comm" rows="10" cols="20">
+                </textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset"><br>
+        <p>si usted hace click en el boton "enviar", la información sera enviada a la pagina "show_data.html".</p>
+
+    </form>
+    
+</body>
+</html>
